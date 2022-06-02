@@ -4,8 +4,9 @@ function carregar()
     var img = document.getElementById("imagem");
     var data = new Date();
     var hora = data.getHours();
-     
-     mensagem.innerHTML = `agora sao ${hora} horas`;
+    var minutos = data.getMinutes();
+     mensagem.innerHTML = `agora sao ${hora} e ${minutos}  horas`;
+
      if(hora >= 0 && hora < 12)
      {
       img.src = 'imagem/manha.png';
